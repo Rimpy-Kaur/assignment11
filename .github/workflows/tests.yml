@@ -17,13 +17,13 @@ jobs:
         with:
           python-version: "3.x"
 
-      # Step 3: Run Test 1 - file with 10 numbers
+      # Step 3: Run Test 1 - file with multiple numbers
       - name: Run Test 1
         run: |
           python find_lowest_number.py test_data/test1_input.txt output1.txt
           diff -u output1.txt test_data/test1_expected.txt
 
-      # Step 4: Run Test 2 - file with 1 number
+      # Step 4: Run Test 2 - file with single number
       - name: Run Test 2
         run: |
           python find_lowest_number.py test_data/test2_input.txt output2.txt
